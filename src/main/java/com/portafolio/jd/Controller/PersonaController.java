@@ -67,7 +67,7 @@ public class PersonaController {
                 
     }*/
     
-    @PostMapping("/crear")
+    @PostMapping("/create")
     public String createPersona(@RequestBody Persona persona) {
         personaService.save(persona);
         return "El Usuario fue creado correctamente";
